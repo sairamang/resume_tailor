@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PDF Comment Analyzer</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="panel">
+    <h1>PDF Comment Analyzer</h1>
+    <p>Select a PDF file and click Analyze. Use a full API request endpoint and save settings before analyzing.</p>
+
+    <div class="config-section">
+      <h2>API Configuration</h2>
+      <div class="config-row">
+        <label for="apiEndpoint">API endpoint</label>
+        <input id="apiEndpoint" type="url" placeholder="https://api.example.com/analyze" />
+      </div>
+      <div class="config-row">
+        <label for="apiKey">API key</label>
+        <input id="apiKey" type="password" placeholder="Enter API key" />
+      </div>
+      <div class="config-row">
+        <label for="model">AI model</label>
+        <input id="model" type="text" placeholder="Enter model name" />
+      </div>
+      <button id="saveSettingsButton">Save Settings</button>
+      <div id="configStatus" class="status"></div>
+    </div>
+
+    <label class="file-picker">
+      <input id="pdfInput" type="file" accept="application/pdf" />
+      <span>Choose PDF</span>
+    </label>
+
+    <button id="analyzeButton" disabled>Analyze PDF</button>
+    <div id="status" class="status"></div>
+    <div id="results" class="results"></div>
+  </div>
+
+  <script src="pdf.min.js"></script>
+  <script src="analyze.js"></script>
+</body>
+</html>

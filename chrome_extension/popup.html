@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PDF Comment Analyzer</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="panel">
+    <h1>PDF Comment Analyzer</h1>
+    <p>Select a PDF file, then click Analyze to review structure and readability.</p>
+
+    <button id="openAnalyzer">Open Analyzer Page</button>
+    <div id="status" class="status">The file chooser is not reliable inside Chrome extension popups. Use the analyzer page for a persistent view.</div>
+    <div id="results" class="results"></div>
+  </div>
+
+  <script src="pdf.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

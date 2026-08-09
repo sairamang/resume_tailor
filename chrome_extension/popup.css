@@ -1,0 +1,125 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f5f6fa;
+  color: #111827;
+}
+
+body {
+  margin: 0;
+  min-width: 360px;
+}
+
+.panel {
+  padding: 18px;
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+}
+
+p {
+  margin: 0 0 16px;
+  line-height: 1.5;
+  color: #4b5563;
+}
+
+.file-picker {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.file-picker input {
+  display: inline-block;
+}
+
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  margin-bottom: 14px;
+  padding: 0 16px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.status {
+  margin-bottom: 16px;
+  color: #374151;
+  font-size: 0.95rem;
+}
+
+.results {
+  display: grid;
+  gap: 12px;
+}
+
+.comment-card {
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  background: white;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+}
+
+.comment-card strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #111827;
+}
+
+.comment-card p {
+  margin: 0;
+  color: #374151;
+  line-height: 1.5;
+}
+
+.config-section {
+  margin-bottom: 18px;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  background: white;
+}
+
+.config-section h2 {
+  margin: 0 0 12px;
+  font-size: 1rem;
+}
+
+.config-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.config-row label {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+.config-row input {
+  min-width: 0;
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  background: #f9fafb;
+  color: #111827;
+  font-size: 0.95rem;
+}

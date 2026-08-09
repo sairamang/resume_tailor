@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "PDF Comment Analyzer",
+  "version": "1.0",
+  "description": "Upload a PDF, parse its text in-browser, and display review comments.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "PDF Comment Analyzer"
+  },
+  "permissions": ["tabs", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["pdf.worker.min.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
